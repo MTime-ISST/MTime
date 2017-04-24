@@ -52,7 +52,7 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .bg-primary {
   background-color: #01334E;
@@ -617,7 +617,3 @@ form.login a:hover
   left: 45%;
 }
 
-#textoBienvenida{
-	font-size: 30px;
-	font-color: green;
-}

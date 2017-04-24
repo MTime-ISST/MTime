@@ -35,13 +35,15 @@ public class ISST_MTIME_Servlet extends HttpServlet{
 		String user = "";
 
 		MTIMEDAO dao = MTIMEDAOImpl.getInstancia();
-		CITA cita = null;
+		//CITA cita = null;
+		ArrayList<CITA> cita = new ArrayList<>();
 		ArrayList<CITA> citas = new ArrayList<>();
 		if (request.getUserPrincipal() != null){
 			user = request.getUserPrincipal().getName();
 			url = userService.createLogoutURL(request.getRequestURI());
 			urlLinktext = "Logout";
-			cita = dao.leerPorPaciente(user);
+			//cita = dao.leerPorPaciente(user);
+			cita.addAll(dao.leerPorPaciente(user));
 			//citas.addAll(dao.leerPorPaciente(user));
 			citas.addAll(dao.leerPorDoctor(user));
 			//citas.addAll(dao.leerPorFechaHora(user));

@@ -41,8 +41,8 @@ public class MTIMEDAOImpl implements MTIMEDAO{
 	}
 
 	@Override
-	public CITA leerPorPaciente(String paciente) {
-		CITA cita = ofy().load().type(CITA.class).filter("paciente", paciente).first().now();
+	public List<CITA> leerPorPaciente(String paciente) {
+		List<CITA> cita = ofy().load().type(CITA.class).filter("paciente", paciente).list();
 		return cita;
 	}
 

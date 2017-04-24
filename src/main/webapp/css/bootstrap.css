@@ -5,29 +5,22 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Quicksand';
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+      
 }
 body {
   margin: 0;
+  font-family: 'Quicksand', 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+#formulario{
+	background: white;
+	padding-bottom: 10px;
+	margin-bottom:10px;
+	border-radius: 25px;
 }
 
-/*
-#page-top{
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/headerMtime2.jpg');
-  text-align: center;
-  color: white;
-}
-*/
 article,
 aside,
 details,
@@ -6770,4 +6763,5 @@ button.close {
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=bootstrap.css.map */
